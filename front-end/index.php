@@ -77,6 +77,29 @@
                     </div>
                 </div>
             </section>
+            <section id="à-propos">
+                <div class="left-part">
+                    <div class="img-a-propos">
+                        <img src="" alt="">
+                    </div>
+                    <div class="badge">
+                        15 ans de métier
+                    </div>
+                </div>
+                <div class="right-part">
+                    <span>- à propos</span>
+                    <h2>Un artisan passionné, un travail impeccable</h2>
+                    <p>Galiskan Eray est artisan carreleur depuis plus de 15 ans. Formé aux techniques traditionnelles et aux méthodes modernes, il réalise des chantiers de qualité sur Limoges et dans un rayon de 100 km, pour particuliers et professionnels.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Pose au sol et murale, intérieur et extérieur</li>
+                        <li><i class="fa-solid fa-check"></i>Découpe de précision, joints parfaits</li>
+                        <li><i class="fa-solid fa-check"></i>Conseil sur le choix des matériaux et formats</li>
+                        <li><i class="fa-solid fa-check"></i>Devis gratuit et détaillé sous 24h</li>
+                        <li><i class="fa-solid fa-check"></i>Chantier propre, respect scrupuleux des délais</li>
+                        <li><i class="fa-solid fa-check"></i>Assurance décennale et garantie décennale incluse</li>
+                    </ul>
+                </div>
+            </section>
         </main>
     </body>
 </html>
