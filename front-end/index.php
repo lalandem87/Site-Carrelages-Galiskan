@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="logo">
-                <img src="" alt="" />
+                <img src="../backend/images/logo-galiskan-eray.svg" alt="logo site" />
             </div>
             <nav>
                 <ul>
@@ -22,65 +22,55 @@
         </header>
         <main>
             <section id="introduction">
-                <div class="container-left&right-part">
-<div class="left-part">
-                    <p><span class="point">.</span>Artisan qualifié - Limoges & 100 km</p>
-                    <h1>Votre carrelage posé avec soin</h1>
-                    <p>Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
-                    <div class="buttons">
-                        <button>Demander un devis gratuit</button>
-                        <button>Voir les réalisations</button>
-                    </div>
-                    <div class="infos">
-                        <div class="container-info">
-                            <h3>15+</h3>
-                            <h4>Années d'expérience</h4>
+                <div class="container-left-right-part">
+                    <div class="left-part">
+                        <p><span class="point">.</span>Artisan qualifié - Limoges & 100 km</p>
+                        <h1>Votre carrelage posé avec soin</h1>
+                        <p>Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
+                        <div class="buttons">
+                            <button>Demander un devis gratuit</button>
+                            <button>Voir les réalisations</button>
                         </div>
-                        <div class="container-info">
-                            <h3>500+</h3>
-                            <h4>Chantier réalisés</h4>
-                        </div>
-                        <div class="container-info">
-                            <h3>99%</h3>
-                            <h4>Clients satisfaits</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-part">
-                    <div class="img-intro">
-                        <img src="" alt="" />
-                    </div>
-                    <div class="popup">
-                        <div class="container-popup">
-                            <div class="icon">📍</div>
-                            <p>Limoges & alentours</p>
-                            <p>Intervention jusqu'à 100 km</p>
+                        <div class="infos">
+                            <div class="container-info">
+                                <h3>15+</h3>
+                                <h4>Années d'expérience</h4>
+                            </div>
+                            <div class="container-info">
+                                <h3>500+</h3>
+                                <h4>Chantier réalisés</h4>
+                            </div>
+                            <div class="container-info">
+                                <h3>99%</h3>
+                                <h4>Clients satisfaits</h4>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="right-part">
+                        <div class="img-intro">
+                            <img src="" alt="" />
+                        </div>
+                        <div class="popup">
+                            <div class="container-popup">
+                                <div class="icon">📍</div>
+                                <p>Limoges & alentours</p>
+                                <p>Intervention jusqu'à 100 km</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="bar-info">
-                    <div class="bar-content">
-                        ✔ Devis gratuit sous 24h
-                    </div>
-                    <div class="bar-content">
-                        🔒 Assurance décennale
-                    </div>
-                    <div class="bar-content">
-                        ⭐ +15 ans d'expérience
-                    </div>
-                    <div class="bar-content">
-                        📍 Limoges & 100 km
-                    </div>
-                    <div class="bar-content">
-                        🏅 Qualibat certifié
-                    </div>
+                    <div class="bar-content">✔ Devis gratuit sous 24h</div>
+                    <div class="bar-content">🔒 Assurance décennale</div>
+                    <div class="bar-content">⭐ +15 ans d'expérience</div>
+                    <div class="bar-content">📍 Limoges & 100 km</div>
+                    <div class="bar-content">🏅 Qualibat certifié</div>
                 </div>
             </section>
             <section id="à-propos">
                 <div class="left-part">
                     <div class="img-a-propos">
-                        <img src="" alt="">
+                        <img src="" alt="" />
                     </div>
                     <div class="badge">
                         15 ans de métier
@@ -91,13 +81,35 @@
                     <h2>Un artisan passionné, un travail impeccable</h2>
                     <p>Galiskan Eray est artisan carreleur depuis plus de 15 ans. Formé aux techniques traditionnelles et aux méthodes modernes, il réalise des chantiers de qualité sur Limoges et dans un rayon de 100 km, pour particuliers et professionnels.</p>
                     <ul>
-                        <li><i class="fa-solid fa-check"></i>Pose au sol et murale, intérieur et extérieur</li>
-                        <li><i class="fa-solid fa-check"></i>Découpe de précision, joints parfaits</li>
-                        <li><i class="fa-solid fa-check"></i>Conseil sur le choix des matériaux et formats</li>
-                        <li><i class="fa-solid fa-check"></i>Devis gratuit et détaillé sous 24h</li>
-                        <li><i class="fa-solid fa-check"></i>Chantier propre, respect scrupuleux des délais</li>
-                        <li><i class="fa-solid fa-check"></i>Assurance décennale et garantie décennale incluse</li>
+                        <li><i class="fa-solid fa-check"></i> Pose au sol et murale, intérieur et extérieur</li>
+                        <li><i class="fa-solid fa-check"></i> Découpe de précision, joints parfaits</li>
+                        <li><i class="fa-solid fa-check"></i> Conseil sur le choix des matériaux et formats</li>
+                        <li><i class="fa-solid fa-check"></i> Devis gratuit et détaillé sous 24h</li>
+                        <li><i class="fa-solid fa-check"></i> Chantier propre, respect scrupuleux des délais</li>
+                        <li><i class="fa-solid fa-check"></i> Assurance décennale et garantie décennale incluse</li>
                     </ul>
+                </div>
+            </section>
+            <section id="services">
+                <span>- services</span>
+                <h2>Ce que je <em class="propose">propose</em></h2>
+                <p>De la salle de bain à la terrasse, je prends en charge tous vos travaux de carrelage avec précision et expertise.</p>
+                <div class="container-cards">
+                    <?php
+                    $data = include "../backend/data.php";
+                    $services = $data["services"];
+                    foreach ($services as $service) { ?>
+                        <div class="service-card">
+                            <article>
+                                <div class="icon-service">
+                                    <?= $service["icon"] ?>
+                                </div>
+                                <h3 class="service-title"><?= $service["title"] ?></h3>
+                                <p><?= $service["detail"] ?></p>
+                            </article>
+                        </div>
+                    <?php }
+                    ?>
                 </div>
             </section>
         </main>
