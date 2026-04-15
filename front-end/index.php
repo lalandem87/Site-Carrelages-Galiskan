@@ -165,6 +165,87 @@
                     ?>
                 </div>
             </section>
+            <section id="contact">
+                <div class="container-contact">
+                    <div class="left-part">
+                        <span>- contact</span>
+                        <h2>Prenez contact avec nous</h2>
+                        <p>Une question, un projet ? Envoyez-nous un message et Mr Galiskan vous répondra dans les plus bref délais.</p>
+                        <?php $contact = $data["à-propos"]; ?>
+                        <div class="contact-infos">
+                            <div class="icon-contact">📞</div>
+                            <div class="contact-info">
+                                <div>Téléphone</div>
+                                <div><?= $contact["tel"] ?></div>
+                            </div>
+                        </div>
+                        <div class="contact-infos">
+                            <div class="icon-contact">✉️</div>
+                            <div class="contact-info">
+                                <div>Email</div>
+                                <div><?= $contact["email"] ?></div>
+                            </div>
+                        </div>
+                        <div class="contact-infos">
+                            <div class="icon-contact">📍</div>
+                            <div class="contact-info">
+                                <div>Zone d'intervention</div>
+                                <div><?= $contact["zone-interventions"]["ville"] ?></div>
+                                <div><?= $contact["zone-interventions"]["detail"] ?></div>
+                            </div>
+                        </div>
+                        <div class="contact-infos">
+                            <div class="icon-contact">🕐</div>
+                            <div class="contact-info">
+                                <div>Disponibilité</div>
+                                <div><?= $contact["disponibilité"] ?></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="container-form">
+                            <div class="title-form">Envoyez-nous un message</div>
+                            <div class="subtitle-form">Réponse rapide garantie · Aucun engagement</div>
+                            <form action="" method="POST">
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="prenom">Prénom *</label>
+                                        <input type="text" id="prenom" name="prenom" placeholder="Jean" />
+                                        <p class="msg-error">Champ requis</p>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="nom">Nom *</label>
+                                        <input type="text" id="nom" name="nom" placeholder="Dupont" />
+                                        <p class="msg-error">Champ requis</p>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <label for="tel">Téléphone *</label>
+                                        <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" />
+                                        <p class="msg-error">Champ requis</p>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" placeholder="jean.dupont@exemple.fr" />
+                                        <p class="msg-error">Champ requis</p>
+                                    </div>
+                                </div>
+                                <div class="form-msg">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" placeholder="Décrivez votre demande, vos projets, ou posez-nous simplement une question..."></textarea>
+                                    <p class="msg-error">Champ requis</p>
+                                </div>
+                                <button type="submit">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                    Envoyer le message
+                                </button>
+                                <p>🔒 Vos données sont confidentielles et ne seront jamais partagées.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
