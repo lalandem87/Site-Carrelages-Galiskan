@@ -47,10 +47,10 @@ return [
     ],
 
     "travaux-realises" => [
-        ["title" => "", "url-image" => ""],
-        ["title" => "", "url-image" => ""],
-        ["title" => "", "url-image" => ""],
-        ["title" => "", "url-image" => ""],
+        ["title" => "", "url-image" => "", "alt" => ""],
+        ["title" => "", "url-image" => "", "alt" => ""],
+        ["title" => "", "url-image" => "", "alt" => ""],
+        ["title" => "", "url-image" => "", "alt" => ""],
     ],
 
     "avis-clients" => [

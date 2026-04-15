@@ -15,8 +15,9 @@
                 <ul>
                     <li><a class="nav-link" href="#à-propos">A propos</a></li>
                     <li><a class="nav-link" href="#services">Services</a></li>
-                    <li><a class="nav-link" href="">Réalisations</a></li>
-                    <li><a class="nav-link" href="">Avis</a></li>
+                    <li><a class="nav-link" href="#portfolio">Réalisations</a></li>
+                    <li><a class="nav-link" href="#avis">Avis</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -67,14 +68,13 @@
                     <div class="bar-content">🏅 Qualibat certifié</div>
                 </div>
             </section>
+
             <section id="à-propos">
                 <div class="left-part">
                     <div class="img-a-propos">
                         <img src="" alt="" />
                     </div>
-                    <div class="badge">
-                        15 ans de métier
-                    </div>
+                    <div class="badge">15 ans de métier</div>
                 </div>
                 <div class="right-part">
                     <span>- à propos</span>
@@ -90,13 +90,14 @@
                     </ul>
                 </div>
             </section>
+
             <section id="services">
                 <span>- services</span>
                 <h2>Ce que je <em class="propose">propose</em></h2>
                 <p>De la salle de bain à la terrasse, je prends en charge tous vos travaux de carrelage avec précision et expertise.</p>
                 <div class="container-cards">
                     <?php
-                    $data = include "../backend/data.php";
+                    $data = include_once "../backend/data.php";
                     $services = $data["services"];
                     foreach ($services as $service) { ?>
                         <div class="service-card">
@@ -107,6 +108,58 @@
                                 <h3 class="service-title"><?= $service["title"] ?></h3>
                                 <p><?= $service["detail"] ?></p>
                             </article>
+                        </div>
+                    <?php }
+                    ?>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <span>- portfolio</span>
+                <h2>Travaux réalisés</h2>
+                <a href="#contact">Votre projet</a>
+                <div class="carrousel">
+                    <div class="carrousel-track">
+                        <?php
+                        $travaux = $data["travaux-realises"];
+                        foreach ($travaux as $travail) { ?>
+                            <div class="carrousel-item">
+                                <img src="<?= $travail["url-image"] ?>" alt="<?= $travail["title"] ?>" />
+                                <h4 class="title-image"><?= $travail["title"] ?></h4>
+                            </div>
+                        <?php }
+                        ?>
+                    </div>
+                    <div class="carrousel-arrows">
+                        <button id="arrow-left"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button id="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="avis">
+                <span>- Avis clients</span>
+                <h2>Ce qu'ils disent</h2>
+                <div class="container-avis">
+                    <?php
+                    $avis = $data["avis-clients"];
+                    foreach ($avis as $avi) { ?>
+                        <div class="avis-card">
+                            <div class="stars">
+                                <?php for ($i = 1; $i <= 5; $i++) {
+                                    if ($i <= $avi["stars"]) { ?>
+                                        <i class="fa-solid fa-star"></i>
+                                    <?php } else { ?>
+                                        <i class="fa-regular fa-star"></i>
+                                    <?php }
+                                } ?>
+                            </div>
+                            <p class="com-avis"><?= $avi["commentaire"] ?></p>
+                            <div class="author-avis"><?= $avi["client"] ?></div>
+                            <div class="rea-type">
+                                <div class="realisation-ville"><?= $avi["ville"] ?></div>
+                                <div class="type-logement"><?= $avi["type-habitation"] ?></div>
+                            </div>
                         </div>
                     <?php }
                     ?>
