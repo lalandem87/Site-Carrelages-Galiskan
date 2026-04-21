@@ -13,12 +13,12 @@
                 <img src="../backend/images/logo-galiskan-eray.svg" alt="logo site" />
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a class="nav-link" href="#à-propos">A propos</a></li>
                     <li><a class="nav-link" href="#services">Services</a></li>
                     <li><a class="nav-link" href="#portfolio">Réalisations</a></li>
                     <li><a class="nav-link" href="#avis">Avis</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-cta" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
