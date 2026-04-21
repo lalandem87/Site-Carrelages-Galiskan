@@ -124,7 +124,7 @@
                         $travaux = $data["travaux-realises"];
                         foreach ($travaux as $travail) { ?>
                             <div class="carrousel-item">
-                                <img src="<?= $travail["url-image"] ?>" alt="<?= $travail["title"] ?>" />
+                                <img src="<?= $travail["url-image"] ?>" alt="<?= $travail["alt"] ?>" />
                                 <h4 class="title-image"><?= $travail["title"] ?></h4>
                             </div>
                         <?php }
