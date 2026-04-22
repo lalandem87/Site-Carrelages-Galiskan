@@ -5,13 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eray Galiskan Carrelages</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/style.css" />
     </head>
     <body>
         <header>
-            
             <img class="logo" src="../backend/images/logo.jpg" alt="logo site" />
-            
             <nav>
                 <ul class="nav-links">
                     <li><a class="nav-link" href="#à-propos">A propos</a></li>
@@ -24,10 +22,10 @@
         </header>
         <main>
             <section id="introduction">
-                <div class="container-both-part">
+                <div class="container-intro">
                     <div class="left-part">
                         <p class="point">Artisan qualifié - Limoges & 100 km</p>
-                        <h1>Votre <span class="carrelage">carrelage</span> posé avec soin.</h1>
+                        <h1>Votre <span class="title">carrelage</span> posé avec soin.</h1>
                         <p class="desc-intro">Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
                         <div class="buttons">
                             <button class="btn-contact"><i class="fa-solid fa-star"></i>Nous contacter</button>
@@ -70,30 +68,35 @@
             </section>
 
             <section id="à-propos">
-                <div class="left-part">
-                    <div class="img-a-propos">
-                        <img src="" alt="" />
+                <div class="container-apropos">
+                    <div class="left-part">
+                        <div class="img-a-propos">
+                            <img src="../backend/images/travaux6.jpg" alt="Photo Travaux n°6" />
+                            <div class="badge">
+                                <span class="big">15</span>
+                                <span class="sm">ans de<br />métier</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="badge">15 ans de métier</div>
-                </div>
-                <div class="right-part">
-                    <span>- à propos</span>
-                    <h2>Un artisan passionné, un travail impeccable</h2>
-                    <p>Galiskan Eray est artisan carreleur depuis plus de 15 ans. Formé aux techniques traditionnelles et aux méthodes modernes, il réalise des chantiers de qualité sur Limoges et dans un rayon de 100 km, pour particuliers et professionnels.</p>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> Pose au sol et murale, intérieur et extérieur</li>
-                        <li><i class="fa-solid fa-check"></i> Découpe de précision, joints parfaits</li>
-                        <li><i class="fa-solid fa-check"></i> Conseil sur le choix des matériaux et formats</li>
-                        <li><i class="fa-solid fa-check"></i> Devis gratuit et détaillé sous 24h</li>
-                        <li><i class="fa-solid fa-check"></i> Chantier propre, respect scrupuleux des délais</li>
-                        <li><i class="fa-solid fa-check"></i> Assurance décennale et garantie décennale incluse</li>
-                    </ul>
+                    <div class="right-part">
+                        <span class="tag">- à propos</span>
+                        <h2>Un artisan <span class="title">passionné</span>, un travail impeccable</h2>
+                        <p class="lead">Galiskan Eray est artisan carreleur depuis plus de 15 ans. Formé aux techniques traditionnelles et aux méthodes modernes, il réalise des chantiers de qualité sur Limoges et dans un rayon de 100 km, pour particuliers et professionnels.</p>
+                        <ul class="a-propos-list">
+                            <li><i class="fa-solid fa-check"></i> Pose au sol et murale, intérieur et extérieur</li>
+                            <li><i class="fa-solid fa-check"></i> Découpe de précision, joints parfaits</li>
+                            <li><i class="fa-solid fa-check"></i> Conseil sur le choix des matériaux et formats</li>
+                            <li><i class="fa-solid fa-check"></i> Devis gratuit et détaillé sous 24h</li>
+                            <li><i class="fa-solid fa-check"></i> Chantier propre, respect scrupuleux des délais</li>
+                            <li><i class="fa-solid fa-check"></i> Assurance décennale et garantie décennale incluse</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <section id="services">
-                <span>- services</span>
-                <h2>Ce que je <em class="propose">propose</em></h2>
+                <span class="tag">- services</span>
+                <h2>Ce que je <span class="title">propose</span></h2>
                 <p>De la salle de bain à la terrasse, je prends en charge tous vos travaux de carrelage avec précision et expertise.</p>
                 <div class="container-cards">
                     <?php
@@ -115,8 +118,8 @@
             </section>
 
             <section id="portfolio">
-                <span>- portfolio</span>
-                <h2>Travaux réalisés</h2>
+                <span class="tag">- portfolio</span>
+                <h2>Travaux <span class="title">réalisés</span></h2>
                 <a href="#contact">Votre projet</a>
                 <div class="carrousel">
                     <div class="carrousel-track">
@@ -138,8 +141,8 @@
             </section>
 
             <section id="avis">
-                <span>- Avis clients</span>
-                <h2>Ce qu'ils disent</h2>
+                <span class="tag">- Avis clients</span>
+                <h2>Ce qu'ils <span class="title">disent</span></h2>
                 <div class="container-avis">
                     <?php
                     $avis = $data["avis-clients"];
@@ -169,7 +172,7 @@
             <section id="contact">
                 <div class="container-contact">
                     <div class="left-part">
-                        <span>- contact</span>
+                        <span class="tag">- contact</span>
                         <h2>Prenez contact avec nous</h2>
                         <p>Une question, un projet ? Envoyez-nous un message et Mr Galiskan vous répondra dans les plus bref délais.</p>
                         <?php $contact = $data["à-propos"]; ?>

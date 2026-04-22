@@ -72,11 +72,6 @@ return [
             "url-image" => "../backend/images/travaux5.jpg",
             "alt" => "Photo Travaux Réalisés 5",
         ],
-        [
-            "title" => "Pose de carrelages formats 40/90 sur receveur.",
-            "url-image" => "../backend/images/travaux6.jpg",
-            "alt" => "Photo Travaux Réalisés 6",
-        ],
     ],
 
     "avis-clients" => [
