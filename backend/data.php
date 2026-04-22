@@ -4,8 +4,8 @@ return [
     "à-propos" => [
         "nom" => "Galiskan",
         "prenom" => "Eray",
-        "tel" => "06 00 00 00 00",
-        "email" => "contact@galiskan-carrelages.fr",
+        "tel" => "06 45 69 35 23",
+        "email" => "erayglkbck@gmail.com",
         "zone-interventions" => [
             "ville" => "Limoges & alentours",
             "detail" => "Rayon de 100 km autour de Limoges (Creuse, Corrèze, Haute-Vienne…)",

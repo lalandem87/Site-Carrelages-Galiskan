@@ -9,9 +9,9 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="../backend/images/logo-galiskan-eray.svg" alt="logo site" />
-            </div>
+            
+            <img class="logo" src="../backend/images/logo.jpg" alt="logo site" />
+            
             <nav>
                 <ul class="nav-links">
                     <li><a class="nav-link" href="#à-propos">A propos</a></li>
@@ -26,12 +26,12 @@
             <section id="introduction">
                 <div class="container-both-part">
                     <div class="left-part">
-                        <p><span class="point">.</span>Artisan qualifié - Limoges & 100 km</p>
-                        <h1>Votre carrelage posé avec soin</h1>
-                        <p>Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
+                        <p class="point">Artisan qualifié - Limoges & 100 km</p>
+                        <h1>Votre <span class="carrelage">carrelage</span> posé avec soin.</h1>
+                        <p class="desc-intro">Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
                         <div class="buttons">
-                            <button>Demander un devis gratuit</button>
-                            <button>Voir les réalisations</button>
+                            <button class="btn-contact"><i class="fa-solid fa-star"></i>Nous contacter</button>
+                            <button class="btn-rea">Voir les réalisations</button>
                         </div>
                         <div class="infos">
                             <div class="container-info">
@@ -50,13 +50,12 @@
                     </div>
                     <div class="right-part">
                         <div class="img-intro">
-                            <img src="" alt="" />
+                            <img src="../backend/images/image-intro.jpeg" alt="Image Introduction" />
                         </div>
                         <div class="popup">
                             <div class="container-popup">
                                 <div class="icon">📍</div>
-                                <p>Limoges & alentours</p>
-                                <p>Intervention jusqu'à 100 km</p>
+                                <p><strong>Limoges & alentours</strong> Intervention jusqu'à 100 km</p>
                             </div>
                         </div>
                     </div>
