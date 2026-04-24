@@ -9,10 +9,15 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="../backend/images/logo.jpg" alt="logo site" />
+            <a class="logo-link" href="#introduction">
+                <img class="logo" src="../backend/images/logo.jpg" alt="logo site" />
+                <div class="head-txt">Galiskan Eray 
+                    <span>Carrelages · Limoges</span>
+                </div>
+            </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a class="nav-link" href="#à-propos">A propos</a></li>
+                    <li><a class="nav-link" href="#à-propos">À propos</a></li>
                     <li><a class="nav-link" href="#services">Services</a></li>
                     <li><a class="nav-link" href="#portfolio">Réalisations</a></li>
                     <li><a class="nav-link" href="#avis">Avis</a></li>
@@ -28,7 +33,7 @@
                             <h1>Votre <span class="title">carrelage</span> posé avec soin.</h1>
                             <p class="desc-intro">Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
                             <div class="buttons">
-                                <button class="btn-contact"><i class="fa-solid fa-star"></i>Nous contacter</button>
+                                <button class="btn-contact">✦ Nous contacter</button>
                                 <button class="btn-rea">Voir les réalisations</button>
                             </div>
                             <div class="infos">
@@ -49,11 +54,11 @@
                         <div class="right-part">
                             <div class="img-intro">
                                 <img src="../backend/images/image-intro.jpeg" alt="Image Introduction" />
-                            </div>
-                            <div class="popup">
-                                <div class="container-popup">
-                                    <div class="icon">📍</div>
-                                    <p><strong>Limoges & alentours</strong> Intervention jusqu'à 100 km</p>
+                                <div class="popup">
+                                    <div class="container-popup">
+                                        <div class="icon">📍</div>
+                                        <p><strong>Limoges & alentours</strong> Intervention jusqu'à 100 km</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -132,25 +137,28 @@
                             <span class="tag">- portfolio</span>
                             <h2>Travaux <span class="title">réalisés</span></h2>
                         </div>
-                        <a href="#contact">Votre projet</a>
+                        <a href="#contact">Votre projet →</a>
                     </div>
-                    <div class="carrousel">
-                        <div class="carrousel-track">
-                            <?php
-                            $travaux = $data["travaux-realises"];
-                            foreach ($travaux as $travail) { ?>
-                                <div class="carrousel-item">
-                                    <img src="<?= $travail["url-image"] ?>" alt="<?= $travail["alt"] ?>" />
-                                    <h4 class="title-image"><?= $travail["title"] ?></h4>
-                                </div>
-                            <?php }
-                            ?>
-                        </div>
-                        <div class="carrousel-arrows">
-                            <button id="arrow-left"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button id="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+                    <div class="container-carrousel">
+                        <div class="carrousel">
+                            <div class="carrousel-track">
+                                <?php
+                                $travaux = $data["travaux-realises"];
+                                foreach ($travaux as $travail) { ?>
+                                    <div class="carrousel-item">
+                                        <img src="<?= $travail["url-image"] ?>" alt="<?= $travail["alt"] ?>" />
+                                        <h4 class="title-image"><?= $travail["title"] ?></h4>
+                                    </div>
+                                <?php }
+                                ?>
+                            </div>
+                            <div class="carrousel-arrows">
+                                <button id="arrow-left"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button id="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -165,6 +173,7 @@
                         $avis = $data["avis-clients"];
                         foreach ($avis as $avi) { ?>
                             <div class="avis-card">
+                                <div class="quote">"</div>
                                 <div class="stars">
                                     <?php for ($i = 1; $i <= 5; $i++) {
                                         if ($i <= $avi["stars"]) { ?>
@@ -305,4 +314,5 @@
             </div>
         </footer>
     </body>
+    <script src="./js/carrousel.js" defer></script>
 </html>
