@@ -201,36 +201,36 @@
                     <div class="container-contact">
                         <div class="left-part">
                             <span class="tag">- contact</span>
-                            <h2>Prenez contact avec nous</h2>
-                            <p>Une question, un projet ? Envoyez-nous un message et Mr Galiskan vous répondra dans les plus bref délais.</p>
+                            <h2>Prenez <span class="title">contact</span> avec nous</h2>
+                            <p class="lead">Une question, un projet ? Envoyez-nous un message et Mr Galiskan vous répondra dans les plus bref délais.</p>
                             <?php $contact = $data["à-propos"]; ?>
                             <div class="contact-infos">
                                 <div class="icon-contact">📞</div>
                                 <div class="contact-info">
-                                    <div>Téléphone</div>
-                                    <div><?= $contact["tel"] ?></div>
+                                    <div class="cinfo-ttl">Téléphone</div>
+                                    <div class="cinfo-sub"><?= $contact["tel"] ?></div>
                                 </div>
                             </div>
                             <div class="contact-infos">
                                 <div class="icon-contact">✉️</div>
                                 <div class="contact-info">
-                                    <div>Email</div>
-                                    <div><?= $contact["email"] ?></div>
+                                    <div class="cinfo-ttl">Email</div>
+                                    <div class="cinfo-sub"><?= $contact["email"] ?></div>
                                 </div>
                             </div>
                             <div class="contact-infos">
                                 <div class="icon-contact">📍</div>
                                 <div class="contact-info">
-                                    <div>Zone d'intervention</div>
-                                    <div><?= $contact["zone-interventions"]["ville"] ?></div>
-                                    <div><?= $contact["zone-interventions"]["detail"] ?></div>
+                                    <div class="cinfo-ttl">Zone d'intervention</div>
+                                    <div class="cinfo-sub"><?= $contact["zone-interventions"]["ville"] ?></div>
+                                    <div class="cinfo-sub"><?= $contact["zone-interventions"]["detail"] ?></div>
                                 </div>
                             </div>
                             <div class="contact-infos">
                                 <div class="icon-contact">🕐</div>
                                 <div class="contact-info">
-                                    <div>Disponibilité</div>
-                                    <div><?= $contact["disponibilité"] ?></div>
+                                    <div class="cinfo-ttl">Disponibilité</div>
+                                    <div class="cinfo-sub"><?= $contact["disponibilité"] ?></div>
                                 </div>
                             </div>
                         </div>
@@ -263,16 +263,16 @@
                                             <p class="msg-error">Champ requis</p>
                                         </div>
                                     </div>
-                                    <div class="form-msg">
+                                    <div class="form-field">
                                         <label for="message">Message *</label>
                                         <textarea id="message" name="message" placeholder="Décrivez votre demande, vos projets, ou posez-nous simplement une question..."></textarea>
                                         <p class="msg-error">Champ requis</p>
                                     </div>
-                                    <button type="submit">
+                                    <button type="submit" class="btn-form">
                                         <i class="fa-regular fa-paper-plane"></i>
                                         Envoyer le message
                                     </button>
-                                    <p>🔒 Vos données sont confidentielles et ne seront jamais partagées.</p>
+                                    <p class="donnee-msg">🔒 Vos données sont confidentielles et ne seront jamais partagées.</p>
                                 </form>
                             </div>
                         </div>

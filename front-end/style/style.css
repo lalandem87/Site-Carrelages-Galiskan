@@ -483,8 +483,8 @@ h2 {
     display: flex;
     justify-content: space-between;
     top: 50%;
-    left: 5%;
-    right: 5%;
+    left: 3%;
+    right: 3%;
 }
 
 #arrow-left,
@@ -561,4 +561,140 @@ h2 {
 .type-logement::before {
     content: "—";
     margin-right: 0.2rem;
+}
+
+/* CONTACT */
+
+#contact {
+    background-color: var(--off);
+}
+
+.container-contact {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.container-contact .left-part {
+    padding: 0;
+}
+
+.container-contact .left-part .lead {
+    margin-bottom: 2.5rem;
+}
+
+.contact-infos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    font-size: 1.1rem;
+    background-color: var(--blue-lt);
+    border-radius: var(--radius);
+}
+
+.cinfo-ttl {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--blue);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.cinfo-sub {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 0.1rem;
+}
+
+/* FORM */
+
+.container-form {
+    background-color: white;
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+}
+
+.title-form {
+    font-family: var(--font-h);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+}
+
+.subtitle-form {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 0.9rem;
+}
+
+.form-field input,
+textarea {
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.7rem 1rem;
+    font-family: var(--font-b);
+    font-size: 0.92rem;
+    color: var(--text);
+    background-color: var(--off);
+    outline: none;
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.form-field textarea {
+    min-height: 140px;
+}
+
+.btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.95rem;
+    border-radius: var(--radius);
+    border: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.donnee-msg {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--text);
 }
