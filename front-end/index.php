@@ -282,14 +282,16 @@
         </main>
         <footer>
             <div class="container-footer">
-                <div class="footer-top">
-                    <div class="footer-brand">
-                        <div class="logo-footer">
-                            <img src="../backend/images/logo-galiskan-eray.svg" alt="logo Galiskan Eray Carrelages" />
-                        </div>
+                <div class="footer-brand">
+                        <a class="logo-link" href="#introduction">
+                            <img class="logo" src="../backend/images/logo-footer.png" alt="logo site" />
+                            <div class="head-foot-txt">Galiskan Eray 
+                                <span>Carrelages</span>
+                            </div>
+                        </a>
                         <p>Artisan carreleur à Limoges, intervention dans un rayon de 100 km. Particuliers et professionnels.</p>
-                    </div>
-                    <div class="footer-links">
+                </div>
+                <div class="footer-links">
                         <h4>Navigation</h4>
                         <ul>
                             <li class="f-link"><a href="#introduction">Accueil</a></li>
@@ -298,8 +300,8 @@
                             <li class="f-link"><a href="#portfolio">Réalisations</a></li>
                             <li class="f-link"><a href="#contact">Contact</a></li>
                         </ul>
-                    </div>
-                    <div class="footer-links">
+                </div>
+                <div class="footer-links">
                         <h4>Contact</h4>
                         <ul>
                             <li class="f-link"><a href="tel:+33600000000">📞 06 00 00 00 00</a></li>
@@ -309,9 +311,9 @@
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    © 2025 Galiskan Eray Carrelages · Limoges (87) · SIRET : 000 000 000 00000 · Assurance décennale · Tous droits réservés
+                    © 2026 Galiskan Eray Carrelages · Limoges (87) · SIRET : 000 000 000 00000 · Assurance décennale · Tous droits réservés
                 </div>
-            </div>
+        </div>
         </footer>
     </body>
     <script src="./js/carrousel.js" defer></script>
