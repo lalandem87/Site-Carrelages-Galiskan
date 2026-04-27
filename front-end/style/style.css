@@ -446,6 +446,7 @@ h2 {
 
 .container-carrousel {
     overflow: hidden;
+    border-radius: var(--radius);
 }
 
 .carrousel {
@@ -454,15 +455,14 @@ h2 {
 
 .carrousel-track {
     display: flex;
-    overflow: hidden;
     height: 50vh;
     flex-wrap: nowrap;
+    transition: 0.5s ease-in-out;
 }
 
 .carrousel-item {
     flex: 0 0 100%;
     height: 100%;
-    transition: 0.5s ease-in-out;
 }
 
 .carrousel-track .carrousel-item {
@@ -474,7 +474,6 @@ h2 {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: var(--radius);
 }
 
 .carrousel-arrows {
@@ -725,6 +724,7 @@ textarea {
 }
 
 .head-foot-txt span {
+    font-size: 0.68rem;
     display: block;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.45);
