@@ -461,6 +461,7 @@ h2 {
 }
 
 .carrousel-item {
+    position: relative;
     flex: 0 0 100%;
     height: 100%;
 }
@@ -474,6 +475,16 @@ h2 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.title-image {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: var(--font-h);
 }
 
 .carrousel-arrows {
@@ -668,6 +679,10 @@ textarea {
 
 .form-field textarea {
     min-height: 140px;
+}
+
+.msg-error {
+    display: none;
 }
 
 .btn-form {

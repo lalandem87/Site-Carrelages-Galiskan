@@ -238,7 +238,7 @@
                             <div class="container-form">
                                 <div class="title-form">Envoyez-nous un message</div>
                                 <div class="subtitle-form">Réponse rapide garantie · Aucun engagement</div>
-                                <form action="" method="POST">
+                                <form action="../backend/send-mail.php" method="POST">
                                     <div class="form-row">
                                         <div class="form-field">
                                             <label for="prenom">Prénom *</label>
