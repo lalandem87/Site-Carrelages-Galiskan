@@ -238,6 +238,13 @@
                             <div class="container-form">
                                 <div class="title-form">Envoyez-nous un message</div>
                                 <div class="subtitle-form">Réponse rapide garantie · Aucun engagement</div>
+
+                                <?php if (isset($_GET["success"])): ?>
+                                    <div class="alert-success">✅ Message envoyé avec succès !</div>
+                                <?php elseif (isset($_GET["error"])): ?>
+                                    <div class="alert-error">❌ Une erreur est survenue, réessayez.</div>
+                                <?php endif; ?>
+
                                 <form action="../backend/send-mail.php" method="POST">
                                     <div class="form-row">
                                         <div class="form-field">
