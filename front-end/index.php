@@ -24,6 +24,11 @@
                     <li><a class="nav-cta" href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
         <main>
             <section id="introduction">
@@ -74,7 +79,7 @@
 
             <section id="à-propos">
                 <div class="section-inner">
-                    <div class="container-apropos">
+                    <div class="container-apropos reveal">
                         <div class="left-part">
                             <div class="img-a-propos">
                                 <img src="../backend/images/travaux6.jpg" alt="Photo Travaux n°6" />
@@ -103,7 +108,7 @@
 
             <section id="services">
                 <div class="section-inner">
-                    <div class="container-services">
+                    <div class="container-services reveal">
                         <div class="service-head">
                             <span class="tag">- services</span>
                             <h2>Ce que je <span class="title">propose</span></h2>
@@ -132,7 +137,7 @@
 
             <section id="portfolio">
                 <div class="section-inner">
-                    <div class="portfolio-head">
+                    <div class="portfolio-head reveal">
                         <div>
                             <span class="tag">- portfolio</span>
                             <h2>Travaux <span class="title">réalisés</span></h2>
@@ -164,7 +169,7 @@
 
             <section id="avis">
                 <div class="section-inner">
-                    <div class="avis-head">
+                    <div class="avis-head reveal">
                         <span class="tag">- Avis clients</span>
                         <h2>Ce qu'ils <span class="title">disent</span></h2>
                     </div>
@@ -198,7 +203,7 @@
 
             <section id="contact">
                 <div class="section-inner">
-                    <div class="container-contact">
+                    <div class="container-contact reveal">
                         <div class="left-part">
                             <span class="tag">- contact</span>
                             <h2>Prenez <span class="title">contact</span> avec nous</h2>
@@ -235,7 +240,7 @@
                             </div>
                         </div>
                         <div class="right-part">
-                            <div class="container-form">
+                            <div class="container-form reveal">
                                 <div class="title-form">Envoyez-nous un message</div>
                                 <div class="subtitle-form">Réponse rapide garantie · Aucun engagement</div>
 
@@ -288,7 +293,7 @@
             </section>
         </main>
         <footer>
-            <div class="container-footer">
+            <div class="container-footer reveal">
                 <div class="footer-brand">
                         <a class="logo-link" href="#introduction">
                             <img class="logo" src="../backend/images/logo-footer.png" alt="logo site" />
@@ -324,4 +329,6 @@
         </footer>
     </body>
     <script src="./js/carrousel.js" defer></script>
-</html>
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/reveal.js" defer></script>
+    </html>
