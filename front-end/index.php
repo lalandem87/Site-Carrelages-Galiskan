@@ -10,7 +10,7 @@
     <body>
         <header>
             <a class="logo-link" href="#introduction">
-                <img class="logo" src="../backend/images/logo.webp" alt="logo site" />
+                <img class="logo" src="../backend/images/logo.webp" alt="logo site"/>
                 <div class="head-txt">Galiskan Eray 
                     <span>Carrelages · Limoges</span>
                 </div>
@@ -24,7 +24,7 @@
                     <li><a class="nav-cta" href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,22 +43,22 @@
                             </div>
                             <div class="infos">
                                 <div class="container-info">
-                                    <h3>15+</h3>
-                                    <h4>Années d'expérience</h4>
+                                    <div>15+</div>
+                                    <span>Années d'expérience</span>
                                 </div>
                                 <div class="container-info">
-                                    <h3>500+</h3>
-                                    <h4>Chantier réalisés</h4>
+                                    <div>500+</div>
+                                    <span>Chantier réalisés</span>
                                 </div>
                                 <div class="container-info">
-                                    <h3>99%</h3>
-                                    <h4>Clients satisfaits</h4>
+                                    <div>99%</div>
+                                    <span>Clients satisfaits</span>
                                 </div>
                             </div>
                         </div>
                         <div class="right-part">
                             <div class="img-intro">
-                                <img src="../backend/images/image-intro.webp" alt="Image Introduction" />
+                                <img src="../backend/images/image-intro.webp" alt="Image Introduction" fetchpriority="high"/>
                                 <div class="popup">
                                     <div class="container-popup">
                                         <div class="icon">📍</div>
@@ -152,14 +152,14 @@
                                 foreach ($travaux as $travail) { ?>
                                     <div class="carrousel-item">
                                         <img src="<?= $travail["url-image"] ?>" alt="<?= $travail["alt"] ?>" />
-                                        <h4 class="title-image"><?= $travail["title"] ?></h4>
+                                        <div class="title-image"><?= $travail["title"] ?></div>
                                     </div>
                                 <?php }
                                 ?>
                             </div>
                             <div class="carrousel-arrows">
-                                <button id="arrow-left"><i class="fa-solid fa-arrow-left"></i></button>
-                                <button id="arrow-right"><i class="fa-solid fa-arrow-right"></i></button>
+                                <button id="arrow-left" aria-label="Image Precedente"><i class="fa-solid fa-arrow-left"></i></button>
+                                <button id="arrow-right" aria-label="Image Suivante"><i class="fa-solid fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -304,7 +304,7 @@
                         <p>Artisan carreleur à Limoges, intervention dans un rayon de 100 km. Particuliers et professionnels.</p>
                 </div>
                 <div class="footer-links">
-                        <h4>Navigation</h4>
+                        <h3>Navigation</h3>
                         <ul>
                             <li class="f-link"><a href="#introduction">Accueil</a></li>
                             <li class="f-link"><a href="#à-propos">À propos</a></li>
@@ -314,7 +314,7 @@
                         </ul>
                 </div>
                 <div class="footer-links">
-                        <h4>Contact</h4>
+                        <h3>Contact</h3>
                         <ul>
                             <li class="f-link"><a href="tel:+33600000000">📞 06 00 00 00 00</a></li>
                             <li class="f-link"><a href="mailto:contact@galiskan-carrelages.fr">✉ contact@galiskan-carrelages.fr</a></li>
