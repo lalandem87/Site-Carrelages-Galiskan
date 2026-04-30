@@ -10,7 +10,7 @@
     <body>
         <header>
             <a class="logo-link" href="#introduction">
-                <img class="logo" src="../backend/images/logo.jpg" alt="logo site" />
+                <img class="logo" src="../backend/images/logo.webp" alt="logo site" />
                 <div class="head-txt">Galiskan Eray 
                     <span>Carrelages · Limoges</span>
                 </div>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="right-part">
                             <div class="img-intro">
-                                <img src="../backend/images/image-intro.jpeg" alt="Image Introduction" />
+                                <img src="../backend/images/image-intro.webp" alt="Image Introduction" />
                                 <div class="popup">
                                     <div class="container-popup">
                                         <div class="icon">📍</div>
@@ -82,7 +82,7 @@
                     <div class="container-apropos reveal">
                         <div class="left-part">
                             <div class="img-a-propos">
-                                <img src="../backend/images/travaux6.jpg" alt="Photo Travaux n°6" />
+                                <img src="../backend/images/travaux6.webp" alt="Photo Travaux n°6" />
                                 <div class="badge">
                                     <span class="big">15</span>
                                     <span class="sm">ans de<br />métier</span>
@@ -296,7 +296,7 @@
             <div class="container-footer reveal">
                 <div class="footer-brand">
                         <a class="logo-link" href="#introduction">
-                            <img class="logo" src="../backend/images/logo-footer.png" alt="logo site" />
+                            <img class="logo" src="../backend/images/logo-footer.webp" alt="logo site" />
                             <div class="head-foot-txt">Galiskan Eray 
                                 <span>Carrelages</span>
                             </div>
