@@ -3,9 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eray Galiskan Carrelages</title>
+        <meta name="description" content="Galiskan Eray Carrelages — Artisan carreleur à Limoges. Pose de carrelage, faïence et mosaïque pour particuliers et professionnels. Devis gratuit sous 24h." />
+        <meta name="robots" content="index, follow" />
+        <title>Galiskan Eray Carrelages – Artisan Carreleur à Limoges</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
         <link rel="stylesheet" href="./style/style.css" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Galiskan Eray Carrelages",
+                "description": "Artisan carreleur à Limoges. Pose de carrelage, faïence et mosaïque pour particuliers et professionnels.",
+                "url": "https://galiskan-carrelages.fr",
+                "telephone": "06 45 69 35 23",
+                "email": "erayglkbck@gmail.com",
+                "address": {
+                    "@type": "Avenue du général rené chambre",
+                    "addressLocality": "Limoges",
+                    "addressRegion": "Haute-Vienne",
+                    "addressCountry": "FR"
+                },
+                "areaServed": {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 45.8336,
+                        "longitude": 1.2611
+                    },
+                    "geoRadius": "100000"d
+                },
+                "priceRange": "€€",
+                "openingHours":"Mo-Fr 08:00-17:00"
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -38,8 +68,8 @@
                             <h1>Votre <span class="title">carrelage</span> posé avec soin.</h1>
                             <p class="desc-intro">Galiskan Eray Carrelages intervient à Limoges et dans un rayon de 100 km pour tous vos projets de pose de carrelage, faïence et mosaïque — chez les particuliers comme les professionnels.</p>
                             <div class="buttons">
-                                <button class="btn-contact">✦ Nous contacter</button>
-                                <button class="btn-rea">Voir les réalisations</button>
+                                <button class="btn-contact"><a href="#contact">✦ Nous contacter</a></button>
+                                <button class="btn-rea"><a href="#portfolio">Voir les réalisations</a></button>
                             </div>
                             <div class="infos">
                                 <div class="container-info">
