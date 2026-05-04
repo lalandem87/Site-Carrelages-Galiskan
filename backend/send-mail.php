@@ -16,11 +16,19 @@ $email = htmlspecialchars($_POST["email"]);
 $message = htmlspecialchars($_POST["message"]);
 
 try {
+    $env = parse_ini_file("./.env");
     $mailer->isSMTP();
+    $mailer->SMTPOptions = [
+        "ssl" => [
+            "verify_peer" => false,
+            "verify_peer_name" => false,
+            "allow_self_signed" => true,
+        ],
+    ];
     $mailer->Host = "smtp.gmail.com";
     $mailer->SMTPAuth = true;
     $mailer->Username = "erayglkbck@gmail.com";
-    $mailer->Password = "";
+    $mailer->Password = $env["GMAIL_PASSWORD"];
     $mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mailer->Port = 587;
 

@@ -18,7 +18,7 @@
                 "telephone": "06 45 69 35 23",
                 "email": "erayglkbck@gmail.com",
                 "address": {
-                    "@type": "Avenue du général rené chambre",
+                    "@type": "8 avenue du général rené chambe",
                     "addressLocality": "Limoges",
                     "addressRegion": "Haute-Vienne",
                     "addressCountry": "FR"
@@ -346,14 +346,18 @@
                 <div class="footer-links">
                         <h3>Contact</h3>
                         <ul>
-                            <li class="f-link"><a href="tel:+33600000000">📞 06 00 00 00 00</a></li>
-                            <li class="f-link"><a href="mailto:contact@galiskan-carrelages.fr">✉ contact@galiskan-carrelages.fr</a></li>
+                            <?php $contact = $data["à-propos"]; ?>
+                            <li class="f-link"><a href="tel:+33600000000">📞 <?= $contact["tel"] ?></a></li>
+                            <li class="f-link"><a href="mailto:contact@galiskan-carrelages.fr">✉ <?= $contact[
+                                "email"
+                            ] ?></a></li>
                             <li class="f-link"><a href="#contact">📍 Limoges & 100 km</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    © 2026 Galiskan Eray Carrelages · Limoges (87) · SIRET : 000 000 000 00000 · Assurance décennale · Tous droits réservés
+                    <span>© 2026 Galiskan Eray Carrelages · Limoges (87) · SIRET : 921 096 400 00012 · Assurance décennale · Tous droits réservés</span>
+                    <a class="mention-legales" href="mention-legales.php">mentions légales</a>
                 </div>
         </div>
         </footer>

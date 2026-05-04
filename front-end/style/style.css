@@ -854,12 +854,23 @@ textarea {
 }
 
 .footer-bottom {
+    position: relative;
     font-size: 0.78rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background-color: var(--text);
     color: rgba(255, 255, 255, 0.45);
     text-align: center;
     padding: 1.5rem;
+}
+
+.footer-bottom a {
+    position: absolute;
+    right: 3%;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.footer-bottom a:hover {
+    color: var(--blue);
 }
 
 /* VERSION TABLET */
@@ -1077,5 +1088,10 @@ textarea {
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
+    }
+
+    .footer-bottom a {
+        right: 36%;
+        bottom: 6%;
     }
 }
