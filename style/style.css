@@ -45,6 +45,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -52,6 +53,7 @@ body {
 }
 
 header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -504,6 +506,7 @@ h2 {
 }
 
 .carrousel-track {
+    -webkit-overflow-scrolling: touch;
     display: flex;
     height: 50vh;
     flex-wrap: nowrap;
@@ -862,7 +865,7 @@ textarea {
     background-color: var(--text);
     color: rgba(255, 255, 255, 0.45);
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
 }
 
 .footer-bottom a {
@@ -952,6 +955,7 @@ textarea {
     }
 
     .nav-links.open {
+        -webkit-overflow-scrolling: touch;
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -1088,5 +1092,14 @@ textarea {
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
+    }
+
+    .footer-bottom {
+        padding: 1.5rem;
+    }
+
+    .mention-legales {
+        display: block;
+        margin-top: 0.5rem;
     }
 }

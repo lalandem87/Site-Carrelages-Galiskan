@@ -9,5 +9,6 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link, .nav-cta").forEach((link) => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("open");
+        hamburger.classList.remove("open");
     });
 });

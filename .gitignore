@@ -1,3 +1,7 @@
 node_modules/
 .env
 .prettierrc
+sitemap.xml
+.htaccess
+Nouveau Document texte.txt
+.gitignore

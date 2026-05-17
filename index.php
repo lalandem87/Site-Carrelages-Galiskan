@@ -31,7 +31,7 @@
                         "latitude": 45.8336,
                         "longitude": 1.2611
                     },
-                    "geoRadius": "100000"d
+                    "geoRadius": "100000"
                 },
                 "priceRange": "€€",
                 "openingHours":"Mo-Fr 08:00-17:00"
