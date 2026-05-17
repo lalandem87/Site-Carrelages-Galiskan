@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Galiskan Eray Carrelages — Artisan carreleur à Limoges. Pose de carrelage, faïence et mosaïque pour particuliers et professionnels. Devis gratuit sous 24h." />
         <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="r0VkSv94CFJJGayGsrheCcZemQHvgMbvUb50Y6dXaP0" />
         <title>Galiskan Eray Carrelages – Artisan Carreleur à Limoges</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
         <link rel="stylesheet" href="./style/style.css" />
@@ -40,7 +41,7 @@
     <body>
         <header>
             <a class="logo-link" href="#introduction">
-                <img class="logo" src="../backend/images/logo.webp" alt="logo site"/>
+                <img class="logo" src="./backend/images/logo.webp" alt="logo site"/>
                 <div class="head-txt">Galiskan Eray 
                     <span>Carrelages · Limoges</span>
                 </div>
@@ -88,7 +89,7 @@
                         </div>
                         <div class="right-part">
                             <div class="img-intro">
-                                <img src="../backend/images/image-intro.webp" alt="Image Introduction" fetchpriority="high"/>
+                                <img src="./backend/images/image-intro.webp" alt="Image Introduction" fetchpriority="high"/>
                                 <div class="popup">
                                     <div class="container-popup">
                                         <div class="icon">📍</div>
@@ -112,7 +113,7 @@
                     <div class="container-apropos reveal">
                         <div class="left-part">
                             <div class="img-a-propos">
-                                <img src="../backend/images/travaux6.webp" alt="Photo Travaux n°6" />
+                                <img src="./backend/images/travaux6.webp" alt="Photo Travaux n°6" />
                                 <div class="badge">
                                     <span class="big">15</span>
                                     <span class="sm">ans de<br />métier</span>
@@ -146,7 +147,7 @@
                         </div>
                         <div class="container-cards">
                             <?php
-                            $data = include_once "../backend/data.php";
+                            $data = include_once "./backend/data.php";
                             $services = $data["services"];
                             foreach ($services as $service) { ?>
                                 <div class="service-card">
@@ -280,7 +281,7 @@
                                     <div class="alert-error">❌ Une erreur est survenue, réessayez.</div>
                                 <?php endif; ?>
 
-                                <form action="../backend/send-mail.php" method="POST">
+                                <form action="./backend/send-mail.php" method="POST">
                                     <div class="form-row">
                                         <div class="form-field">
                                             <label for="prenom">Prénom *</label>
@@ -326,7 +327,7 @@
             <div class="container-footer reveal">
                 <div class="footer-brand">
                         <a class="logo-link" href="#introduction">
-                            <img class="logo" src="../backend/images/logo-footer.webp" alt="logo site" />
+                            <img class="logo" src="./backend/images/logo-footer.webp" alt="logo site" />
                             <div class="head-foot-txt">Galiskan Eray 
                                 <span>Carrelages</span>
                             </div>

@@ -1,7 +1,7 @@
 <?php
-require "PHPMailer-master/src/PHPMailer.php";
-require "PHPMailer-master/src/SMTP.php";
-require "PHPMailer-master/src/Exception.php";
+require "./PHPMailer-master/src/PHPMailer.php";
+require "./PHPMailer-master/src/SMTP.php";
+require "./PHPMailer-master/src/Exception.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -48,10 +48,10 @@ try {
     $mailer->AltBody = "Nom : $prenom $nom\nTél : $tel\nEmail : $email\n\nMessage :\n$message";
 
     if (!$mailer->send()) {
-        header("Location: ../front-end/index.php?error=ok");
+        header("Location: ../index.php?error=ok");
         exit();
     }
-    header("Location: ../front-end/index.php?success=ok");
+    header("Location: ../index.php?success=ok");
     exit();
 } catch (Exception $e) {
     echo "Le message n'a pas pu être envoyé. Erreur: {$mailer->ErrorInfo}";
